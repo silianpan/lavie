@@ -60,6 +60,8 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                           return GridView(
                             padding: const EdgeInsets.only(
                                 top: 0, left: 12, right: 12),
+                            // ClampingScrollPhysics Android下的微光效果
+                            // BouncingScrollPhysics IOS下的弹性效果
                             physics: const BouncingScrollPhysics(),
                             scrollDirection: Axis.vertical,
                             children: List<Widget>.generate(
