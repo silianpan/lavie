@@ -3,7 +3,7 @@ import 'package:lavie/fitness_app/models/meals_list_data.dart';
 import 'package:lavie/main.dart';
 import 'package:flutter/material.dart';
 
-import '../../main1.dart';
+import '../../main.dart';
 
 class MealsListView extends StatefulWidget {
   const MealsListView(

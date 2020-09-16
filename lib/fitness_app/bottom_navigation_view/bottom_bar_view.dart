@@ -4,7 +4,7 @@ import 'package:lavie/fitness_app/models/tabIcon_data.dart';
 import 'package:lavie/main.dart';
 import 'package:flutter/material.dart';
 
-import '../../main1.dart';
+import '../../main.dart';
 import '../models/tabIcon_data.dart';
 
 class BottomBarView extends StatefulWidget {
