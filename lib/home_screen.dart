@@ -1,6 +1,7 @@
 import 'package:lavie/app_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:lavie/hotel_booking/hotel_home_screen.dart';
+// import 'package:lavie/hotel_booking/hotel_home_screen.dart';
+import 'package:lavie/widgets/idea_card.dart';
 // import 'model/homelist.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -58,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                         if (!snapshot.hasData) {
                           return const SizedBox();
                         } else {
-                          return HotelHomeScreen();
+                          return IdeaCard();
                           // return GridView(
                           //   padding: const EdgeInsets.only(
                           //       top: 0, left: 12, right: 12),
