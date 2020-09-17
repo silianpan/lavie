@@ -58,7 +58,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                 },
                 child: Column(
                   children: <Widget>[
-                    getAppBarUI(),
+                    // getAppBarUI(),
                     Expanded(
                       child: NestedScrollView(
                         controller: _scrollController,
