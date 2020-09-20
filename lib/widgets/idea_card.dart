@@ -54,25 +54,51 @@ class IdeaCard extends StatelessWidget {
               padding: EdgeInsets.only(top: 16.0),
               child: Wrap(children: <Widget>[
                 Text(
-                  '看最美的风景，看最优秀的人，致自己，最优秀的自己',
+                  'vue-admin-beautiful-pro版本发布了',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15.0),
                 ),
               ]),
             ),
-            // GridView(
-            //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            //       crossAxisCount: 3, //横轴三个子widget
-            //       childAspectRatio: 1.0 //宽高比为1时，子widget
-            //       ),
-            //   children: <Widget>[
-            //     Icon(Icons.ac_unit),
-            //     Icon(Icons.airport_shuttle),
-            //     Icon(Icons.all_inclusive),
-            //     Icon(Icons.beach_access),
-            //     Icon(Icons.cake),
-            //     Icon(Icons.free_breakfast)
-            //   ],
-            // ),
+            Container(
+              height: 300,
+              width: 200,
+              child: GridView.count(
+                crossAxisCount: 3,
+                crossAxisSpacing: 4,
+                children: <Widget>[
+                  Image(
+                    fit: BoxFit.cover,
+                    image: NetworkImage(
+                        'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8669bf1c7d8345cab73651bc9be925b6~tplv-k3u1fbpfcp-zoom-1.image'),
+                  ),
+                  Image(
+                    fit: BoxFit.cover,
+                    image: NetworkImage(
+                        'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8669bf1c7d8345cab73651bc9be925b6~tplv-k3u1fbpfcp-zoom-1.image'),
+                  ),
+                  Image(
+                    fit: BoxFit.cover,
+                    image: NetworkImage(
+                        'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8669bf1c7d8345cab73651bc9be925b6~tplv-k3u1fbpfcp-zoom-1.image'),
+                  ),
+                  Image(
+                    fit: BoxFit.cover,
+                    image: NetworkImage(
+                        'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8669bf1c7d8345cab73651bc9be925b6~tplv-k3u1fbpfcp-zoom-1.image'),
+                  ),
+                  Image(
+                    fit: BoxFit.cover,
+                    image: NetworkImage(
+                        'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8669bf1c7d8345cab73651bc9be925b6~tplv-k3u1fbpfcp-zoom-1.image'),
+                  ),
+                  Image(
+                    fit: BoxFit.cover,
+                    image: NetworkImage(
+                        'https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8669bf1c7d8345cab73651bc9be925b6~tplv-k3u1fbpfcp-zoom-1.image'),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
