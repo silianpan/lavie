@@ -11,6 +11,7 @@ class IdeaCard extends StatelessWidget {
         padding: EdgeInsets.all(12.0),
         color: Colors.red,
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             Row(
