@@ -6,7 +6,7 @@ class IdeaCard extends StatelessWidget {
     return ListView(
       children: <Widget>[
         Card(
-          color: Colors.red,
+          color: Colors.white,
           child: Padding(
             padding: EdgeInsets.all(12.0),
             child: Column(
@@ -60,7 +60,7 @@ class IdeaCard extends StatelessWidget {
                   ]),
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(0.0, 5.0, 0.0, 0.0),
+                  padding: const EdgeInsets.fromLTRB(0.0, 16.0, 0.0, 0.0),
                   child: Column(
                     children: <Widget>[
                       GridView.count(
@@ -108,10 +108,14 @@ class IdeaCard extends StatelessWidget {
                     ],
                   ),
                 ),
+                Padding(
+                    padding: EdgeInsets.only(top: 6.0),
+                    child: Divider(color: Colors.grey))
               ],
             ),
           ),
         ),
+        SizedBox(height: 20.0)
       ],
     );
   }
