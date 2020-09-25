@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                           return const SizedBox();
                         } else {
                           return Container(
-                              color: AppTheme.grey, child: IdeaCard());
+                              color: Colors.grey, child: IdeaCard());
                           // return GridView(
                           //   padding: const EdgeInsets.only(
                           //       top: 0, left: 12, right: 12),
