@@ -117,17 +117,44 @@ class IdeaCard extends StatelessWidget {
                   direction: Axis.horizontal,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Icon(
-                      IconFont.icon0_like1,
-                      color: Colors.grey,
+                    Flex(
+                      direction: Axis.horizontal,
+                      children: [
+                        Icon(
+                          IconFont.icon0_like1,
+                          color: Colors.grey,
+                        ),
+                        Text(
+                          '点赞',
+                          style: TextStyle(fontSize: 16.0),
+                        )
+                      ],
                     ),
-                    Icon(
-                      IconFont.iconpinglun_tongyong,
-                      color: Colors.grey,
+                    Flex(
+                      direction: Axis.horizontal,
+                      children: [
+                        Icon(
+                          IconFont.iconpinglun_tongyong,
+                          color: Colors.grey,
+                        ),
+                        Text(
+                          '评论',
+                          style: TextStyle(fontSize: 16.0),
+                        )
+                      ],
                     ),
-                    Icon(
-                      IconFont.iconshare,
-                      color: Colors.grey,
+                    Flex(
+                      direction: Axis.horizontal,
+                      children: [
+                        Icon(
+                          IconFont.iconshare,
+                          color: Colors.grey,
+                        ),
+                        Text(
+                          '分享',
+                          style: TextStyle(fontSize: 16.0),
+                        )
+                      ],
                     ),
                   ],
                 )
