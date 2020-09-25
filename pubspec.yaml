@@ -81,6 +81,9 @@ flutter:
         - asset: assets/fonts/Roboto-Regular.ttf
         - asset: assets/fonts/Roboto-Medium.ttf
           weight: 400
+    - family: IconFont
+      fonts:
+        - asset: assets/fonts/iconfont.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

@@ -59,7 +59,8 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                         if (!snapshot.hasData) {
                           return const SizedBox();
                         } else {
-                          return IdeaCard();
+                          return Container(
+                              color: AppTheme.grey, child: IdeaCard());
                           // return GridView(
                           //   padding: const EdgeInsets.only(
                           //       top: 0, left: 12, right: 12),

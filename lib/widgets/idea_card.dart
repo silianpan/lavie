@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lavie/widgets/iconfont.dart';
 
 class IdeaCard extends StatelessWidget {
   @override
@@ -109,13 +110,32 @@ class IdeaCard extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                    padding: EdgeInsets.only(top: 6.0),
-                    child: Divider(color: Colors.grey))
+                  padding: EdgeInsets.only(top: 6.0),
+                  child: Divider(color: Colors.grey),
+                ),
+                Flex(
+                  direction: Axis.horizontal,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Icon(
+                      IconFont.icon0_like1,
+                      color: Colors.grey,
+                    ),
+                    Icon(
+                      IconFont.iconpinglun_tongyong,
+                      color: Colors.grey,
+                    ),
+                    Icon(
+                      IconFont.iconshare,
+                      color: Colors.grey,
+                    ),
+                  ],
+                )
               ],
             ),
           ),
         ),
-        SizedBox(height: 20.0)
+        SizedBox(height: 20.0),
       ],
     );
   }
