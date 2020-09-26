@@ -1,7 +1,8 @@
 import 'package:lavie/app_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:lavie/widgets/idea.dart';
 // import 'package:lavie/hotel_booking/hotel_home_screen.dart';
-import 'package:lavie/widgets/idea_card.dart';
+import 'package:lavie/widgets/idea_list.dart';
 // import 'model/homelist.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -15,11 +16,26 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
   // List<HomeList> homeList = HomeList.homeList;
   AnimationController animationController;
   bool multiple = true;
+  List<Idea> ideaList;
 
   @override
   void initState() {
     animationController = AnimationController(
         duration: const Duration(milliseconds: 2000), vsync: this);
+    ideaList = List<Idea>.generate(
+      10,
+      (index) => Idea(
+        'https://www.woolha.com/media/2020/03/eevee.png',
+        '潇洒的一条狗',
+        '攻城狮',
+        '3小时前',
+        '实习生也能拥有的开水团中秋小黄盒~',
+        List<String>.generate(
+            5,
+            (index) =>
+                'https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/da94c47b3c59488586ebfe92ada09a91~tplv-k3u1fbpfcp-zoom-1.image'),
+      ),
+    );
     super.initState();
   }
 
@@ -60,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                           return const SizedBox();
                         } else {
                           return Container(
-                              color: Colors.grey, child: IdeaCard());
+                              color: Colors.grey, child: IdeaList(ideaList: ideaList,));
                           // return GridView(
                           //   padding: const EdgeInsets.only(
                           //       top: 0, left: 12, right: 12),
