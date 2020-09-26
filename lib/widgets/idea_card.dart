@@ -82,6 +82,15 @@ class IdeaCard extends StatelessWidget {
                 ],
               ),
             ),
+            OutlineButton(
+              onPressed: () {},
+              child: Text('一图胜千言'),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20.0),
+              ),
+              textColor: Colors.blue,
+              borderSide: BorderSide(color: Colors.blue),
+            ),
             Padding(
               padding: EdgeInsets.only(top: 6.0),
               child: Divider(color: Colors.grey),

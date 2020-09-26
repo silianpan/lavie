@@ -5,6 +5,7 @@ class Idea {
   final String time;
   final String info;
   final List<String> photoList;
+  final String category;
 
-  Idea(this.avatar, this.name, this.role, this.time, this.info, this.photoList);
+  Idea(this.avatar, this.name, this.role, this.time, this.info, this.photoList, this.category);
 }

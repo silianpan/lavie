@@ -34,6 +34,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
             5,
             (index) =>
                 'https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/da94c47b3c59488586ebfe92ada09a91~tplv-k3u1fbpfcp-zoom-1.image'),
+        '一图胜千言',
       ),
     );
     super.initState();
@@ -76,7 +77,10 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                           return const SizedBox();
                         } else {
                           return Container(
-                              color: Colors.grey, child: IdeaList(ideaList: ideaList,));
+                              color: Colors.grey,
+                              child: IdeaList(
+                                ideaList: ideaList,
+                              ));
                           // return GridView(
                           //   padding: const EdgeInsets.only(
                           //       top: 0, left: 12, right: 12),
