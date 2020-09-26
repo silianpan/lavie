@@ -156,7 +156,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
               child: Padding(
                 padding: const EdgeInsets.only(top: 4),
                 child: Text(
-                  'Flutter UI',
+                  'lavie',
                   style: TextStyle(
                     fontSize: 22,
                     color: AppTheme.darkText,
@@ -166,30 +166,30 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(top: 8, right: 8),
-            child: Container(
-              width: AppBar().preferredSize.height - 8,
-              height: AppBar().preferredSize.height - 8,
-              color: Colors.white,
-              child: Material(
-                color: Colors.transparent,
-                child: InkWell(
-                  borderRadius:
-                      BorderRadius.circular(AppBar().preferredSize.height),
-                  child: Icon(
-                    multiple ? Icons.dashboard : Icons.view_agenda,
-                    color: AppTheme.dark_grey,
-                  ),
-                  onTap: () {
-                    setState(() {
-                      multiple = !multiple;
-                    });
-                  },
-                ),
-              ),
-            ),
-          ),
+          // Padding(
+          //   padding: const EdgeInsets.only(top: 8, right: 8),
+          //   child: Container(
+          //     width: AppBar().preferredSize.height - 8,
+          //     height: AppBar().preferredSize.height - 8,
+          //     color: Colors.white,
+          //     child: Material(
+          //       color: Colors.transparent,
+          //       child: InkWell(
+          //         borderRadius:
+          //             BorderRadius.circular(AppBar().preferredSize.height),
+          //         child: Icon(
+          //           multiple ? Icons.dashboard : Icons.view_agenda,
+          //           color: AppTheme.dark_grey,
+          //         ),
+          //         onTap: () {
+          //           setState(() {
+          //             multiple = !multiple;
+          //           });
+          //         },
+          //       ),
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );

@@ -10,6 +10,7 @@ class IdeaList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      padding: EdgeInsets.all(0),
       itemCount: ideaList.length,
       itemBuilder: (BuildContext context, int index) {
         return IdeaCard(
